@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fdfdff;
+  color: #393d3f;
+}
+
+#productlist{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(550px, auto) !important;
+}
+
+/* when resizing, images get fucked as hell, so hardcode the width too LMAO */
+
+#productsonly.card-image{
+  height: 400px; /* Your height here */
+
+}
+#productsonly img{
+  width:100% !important;
+  height:50% !important;
+}
+
+.cart-img{
+  width: 40%;
+}
+
+.cartimg{
+  height:100% !important;
+  width:100% !important;
+}
+
+.card.medium .card-image,
+.card.large .card-image {
+  max-height: 77% !important;
+  
+}
+
+.card.small {
+  height: 130px !important;
+}
+
+.card .card-action {
+  border-top: none !important;
+}
+
+#full {
+  min-height: 100vh; /* use "vh" instead of % */
+}
+
+.cardspan{
+  font-size: 2.5rem !important;
+}
+
+p{
+  font-size: 1rem !important;
+}
+
+
+
+@media only screen and (max-width: 1600px) {
+  .card.horizontal .card-image{
+    display: none;
+    
+  }
+  .cardspan{
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #productlist{
+    grid-template-columns: 1fr 1fr;
+  }
+  .card.horizontal .card-image{
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  #productlist{
+    grid-template-columns: 1fr;
+  }
+} 
+
+@media only screen and (max-width: 300px) {
+  .card.horizontal .card-image{
+    display: none;
+    
+  }
+}

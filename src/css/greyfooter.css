@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+    
+.page-footer{
+    background-color: #393D3F !important;
+    color: #FDFDFF !important;
+}
+
+.footer-copyright{
+  background-color: #343637 !important;
+  color: #FDFDFF !important;
+}
+
+.quicklinks li a{
+  color: #FDFDFF!important;
+}
+
+@media only screen and (max-width:455px){
+  .right{
+    display: none;
+  }
+}

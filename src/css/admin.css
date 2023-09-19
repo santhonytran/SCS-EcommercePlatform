@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background:#FDFDFF;
+    color:#393D3F;
+}
+
+span{
+    color:#149BBB;
+}
+
+#admin{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#admin h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 25px;
+}
+
+#admin button{
+    margin:15px;
+}

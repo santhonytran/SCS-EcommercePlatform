@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fdfdff;
+  color: #393d3f;
+}
+
+/* when resizing, images get fucked as hell, so hardcode the width too LMAO */
+
+.img-products {
+  height: 400px !important;
+  width: 400px;
+}
+
+.card.medium .card-image,
+.card.large .card-image {
+  max-height: 77% !important;
+  overflow: hidden !important;
+}
+
+.card.small {
+  height: 130px !important;
+}
+
+.card .card-action {
+  border-top: none !important;
+}
+
+#full {
+  min-height: 100vh; /* use "vh" instead of % */
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+#mapdiv {
+  height: 100%;
+  width: 100%;
+}
+
+.btn{
+  margin-bottom: 50px;
+}
+
+.input-field{
+  margin-top: 1vh !important;
+}
+
+.reviews.input-field[type=text]{
+  color: black !important;
+}
+
+@media only screen and (max-width: 1600px) {
+  .card.horizontal .card-image{
+    display: none;
+    
+  }
+  .cardspan{
+    font-size: 2rem !important;
+  }
+}

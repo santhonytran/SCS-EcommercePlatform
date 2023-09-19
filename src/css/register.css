@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background:#FDFDFF;
+    color:#393D3F;
+}
+
+span{
+    color:#149BBB;
+    
+}
+
+#register{
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/login.png) no-repeat center center/cover;
+    text-align: center;
+}
+
+#register #regarea{
+    width:450px;
+    height: 900px;
+    min-height: 900px;
+    background:#393D3F;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.4); 
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    color:#FDFDFF;
+    margin: 35px 0;
+}
+
+#register #regarea h1{
+    font-size: 3rem;
+    font-weight:700;
+}
+
+label{
+    font-size:1rem;
+}
+
+.register-input{
+    color:#FDFDFF;
+}

@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background:#FDFDFF;
+    color:#393D3F;
+}
+
+span{
+    color:#149BBB;
+}
+
+#contact-container{
+    width:100%;
+    height: 100vh;
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-container #contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:50%;
+    height:100%;
+    background:#393D3F;
+    color:#FDFDFF;
+}
+
+#contact-container #contact h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#contact-container #contact p{
+    margin: 10px 0;
+    width: 95%;
+}
+
+#contact-container #teaminfo{
+    width:50%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-container #teaminfo h1{
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+#contact-container #teaminfo .infomembers h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 650px){
+    #contact-container{
+        flex-direction: column;
+    }
+    #contact-container #contact{
+        width:100%;
+        height: 50%;
+        min-height: 50%;
+    }
+    #contact-container #teaminfo{
+        width:100%;
+        height: 50%;
+        min-height: 50%;
+    }
+    #contact-container #contact p{
+        margin: 5;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    #contact-container{
+        height: 150vh;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .page-footer{
+        margin-top: 100px;
+    }
+  }

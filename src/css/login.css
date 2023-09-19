@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background:#FDFDFF;
+    color:#393D3F;
+}
+
+span{
+    color:#149BBB;
+}
+
+#login{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(../img/login.png) no-repeat center center/cover;
+}
+
+#login #loginarea{
+    width:400px;
+    height: 500px;
+    background:#393D3F;
+    -webkit-box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.4); 
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    color:#FDFDFF;
+}
+
+#login #loginarea h1{
+    font-size: 3rem;
+    font-weight:700;
+}
+
+label{
+    font-size:1rem;
+}
+
+.login-input{
+    color:#FDFDFF;
+}

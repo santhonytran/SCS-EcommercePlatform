@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fdfdff;
+  color: #393d3f;
+}
+
+span {
+  color: #149bbb;
+}
+
+#invoice-container {
+  width: 100%;
+  height: 90vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+#invoice-container #invoice-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  height: 800px;
+  min-height: 800px;
+  background: #393d3f;
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: #fdfdff;
+}
+
+#invoice-container #invoice-box span i {
+  margin-top: 25px;
+}
+
+#invoice-container #invoice-box h1 {
+  width: 90%;
+  font-size: 3rem;
+}
+
+#invoice-container #invoice-box p {
+  width: 90%;
+  font-size: 1rem;
+  margin: 15px;
+}
+
+#invoice-container #invoice-box a {
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  #invoice-container #invoice-box {
+    width: 90%;
+  }
+
+  #invoice-container #invoice-box h1 {
+    font-size: 2rem;
+  }
+}
